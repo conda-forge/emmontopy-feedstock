@@ -1,5 +1,5 @@
 {% set name = "emmontopy" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emmontopy-{{ version }}.tar.gz
-  sha256: e42d4ec1fba372c6be092672d7be06ce7bf8d3408a4b8f238553d686f3df499a
+  sha256: 0f01650a7396b72e495de6108c45e1e822fe286d1f09f40eb8e3859c9504c3af
   patches:
     - remove-factplusplus-reasoner.patch
     - replace-blessings-with-blessed.patch
 
 build:
   noarch: python
-  
+
   # FaCT++ coming with emmontopy would only run on linux and require java
   # as additional dependency. In agreement with upstream it is removed from
   # the conda-forge package. Removing everything via a patch does not work because
