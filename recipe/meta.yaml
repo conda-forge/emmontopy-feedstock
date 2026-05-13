@@ -37,8 +37,8 @@ requirements:
     - __win    # [win]
     - blessed >=1.17
     - defusedxml >=0.7.1,<1
-    - owlready2 >=0.28,!=0.32,!=0.34,<0.49
-    - packaging >=21.0,<26
+    - owlready2 >=0.28,!=0.32,!=0.34,<0.50
+    - packaging >=21.0,<27
     - pygments >=2.7.4,<3
     - pyparsing >=2.4.7
     - pyyaml >=5.4.1,<7
