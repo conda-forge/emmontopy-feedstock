@@ -10,7 +10,6 @@ source:
   sha256: 4bdafe6ac5fe0f8c4a378f528b68624ea1ed2d39ba5abb5f5574bff68f608c1e
   patches:
     - remove-factplusplus-reasoner.patch
-    - replace-blessings-with-blessed.patch
 
 build:
   noarch: python
